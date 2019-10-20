@@ -17,7 +17,7 @@ def pick_city():
     Returns:
         (str) Display city's bikeshare data.
     '''
-    
+
     city = input('\nHello! Let\'s explore some US bikeshare data!\n'
                  '\nWould you like to see data for Chicago (CH), New York (NY), or Washington (WA)?\n')
 
@@ -166,7 +166,7 @@ def load_data(city):
     #add datetime format
     df['Start Time'] = pd.to_datetime(df['Start Time'])
 
-    #add auxiliary columns
+    #add additional columns
 
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     df['month'] = df['Start Time'].dt.month
@@ -394,7 +394,7 @@ def max_day_of_month(df, month):
     maxDay = max(df["day_of_month"])
     return maxDay
 
-#display additional lines of data upon request
+#display additional lines of data per user's request
 
 def display_raw_data(df):
     """
