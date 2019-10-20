@@ -12,3 +12,6 @@ Include the files used
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+### Created and switched to branch documentation
+### Add color to pages in documentation
+### Indent paragraphs 
